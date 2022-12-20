@@ -6,9 +6,9 @@ spring:
     name: producer-order8080
   datasource:
     type: com.alibaba.druid.pool.DruidDataSourceC3P0Adapter
-    url: jdbc:postgresql://localhost:5432/itmem?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
-    username: postgres
-    password: 123456
+    url: grpcs://ydb.serverless.yandexcloud.net:2135/itmem?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: ydb712
+    password: scret
 
 eureka:
   client:
